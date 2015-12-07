@@ -17,6 +17,8 @@ public class Student {
 
 	private String student_name;
 
+	// Step 1 : Just mention child object in parent class with getter setter 
+	// Here is Many To One
 	@ManyToOne(cascade = CascadeType.ALL)
 	private StudentAddress studentAddress;
 

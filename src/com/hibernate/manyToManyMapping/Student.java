@@ -20,6 +20,7 @@ public class Student {
 
 	private String student_name;
 
+	// Step 1: Add a collection of Set of studentCertification class
 	@ManyToMany(cascade=CascadeType.ALL)
 	private Set<StudentCertification> studentCertification=new HashSet<StudentCertification>();
 	

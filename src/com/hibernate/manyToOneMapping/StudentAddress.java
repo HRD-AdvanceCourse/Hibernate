@@ -20,6 +20,8 @@ public class StudentAddress {
 
 	private String address_detail;
 
+	// Step 2: Add a collection of student class
+	// Here is one to Many
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "studentAddress")
 	private Set<Student> student = new HashSet<Student>(0);
 

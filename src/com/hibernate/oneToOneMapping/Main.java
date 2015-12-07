@@ -6,6 +6,7 @@ import org.hibernate.cfg.Configuration;
 
 public class Main {
 
+	// Step 3
 	public static void main(String[] args) {
 		Student student = new Student();
 		student.setStudent_name("kokpheng");
