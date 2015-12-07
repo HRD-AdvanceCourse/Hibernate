@@ -33,5 +33,20 @@
     
     <!-- Mention here all the model classes along with their package name -->
     <mapping class="main.java.Student_Info" />
+    
+    <!-- Mention here all the model classes along with their package name -->
+	<mapping class="com.hibernate.manyToOneMapping.Student"/>
+	<mapping class="com.hibernate.manyToOneMapping.StudentAddress"/>
+	
+	  <!-- Mention here all the model classes along with their package name -->
+	<mapping class="com.hibernate.oneToOneMapping.Student"/>
+	<mapping class="com.hibernate.oneToOneMapping.StudentDetail"/>
+	
+		<!-- Mention here all the model classes along with their package name -->
+	<mapping class="com.hibernate.CRUD.Student"/>
+	
+	<!-- Mention here all the model classes along with their package name -->
+	<mapping class="com.hibernate.manyToManyMapping.Student"/>
+	<mapping class="com.hibernate.manyToManyMapping.StudentCertification"/>
   </session-factory>
 </hibernate-configuration>
