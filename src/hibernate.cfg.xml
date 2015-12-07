@@ -32,6 +32,6 @@
    <property name="hbm2ddl.auto">create</property> 
     
     <!-- Mention here all the model classes along with their package name -->
-    <mapping class="com.hibernate.Student_Info" />
+    <mapping class="main.java.Student_Info" />
   </session-factory>
 </hibernate-configuration>
