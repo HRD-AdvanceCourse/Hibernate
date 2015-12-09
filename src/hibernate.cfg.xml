@@ -61,6 +61,10 @@
 	<!-- Chatper 3 two class to one table -->
 		<mapping class="com.hibernate.chapter3TwoClassToOneTable.SchoolChpt3" />
 	
+	<!-- Chatper 3 compound key -->
+		<mapping class="com.hibernate.chapter3.compoundPrimaryKey.AccountsChpt3" />
+	
+	
 
 	</session-factory>
 </hibernate-configuration>
