@@ -51,5 +51,7 @@
 		<!-- One to One -->
 		<mapping class="com.hibernate.oneToOneMapping.Student" />
 		<mapping class="com.hibernate.oneToOneMapping.StudentDetail" />
+		
+			<mapping class="com.hibernate.main2.Employee" />
 	</session-factory>
 </hibernate-configuration>
