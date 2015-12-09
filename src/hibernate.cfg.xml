@@ -84,5 +84,18 @@
 		<mapping class="com.hibernate.chapter4.InheritanceMapping.TablePerClass.ProjectChpt4TPC" />
 		<mapping class="com.hibernate.chapter4.InheritanceMapping.TablePerClass.ModuleChpt4TPC" />
 		<mapping class="com.hibernate.chapter4.InheritanceMapping.TablePerClass.TaskChpt4TPC" />
+		
+		<!-- Chatper 5 one to one -->
+		<mapping class="com.hibernate.chapter5.oneToOneMapping.PersonChpt5" />
+		<mapping class="com.hibernate.chapter5.oneToOneMapping.PersonDetailChpt5" />
+		
+		<!-- Chatper 5 one to many -->
+		<mapping class="com.hibernate.chapter5.oneToManyMapping.CollegeChpt5" />
+		<mapping class="com.hibernate.chapter5.oneToManyMapping.StudentChpt5" />
+		
+		<!-- Chatper 5 Many to many -->
+		<mapping class="com.hibernate.chapter5.manyToManyMapping.Chpt5Event" />
+		<mapping class="com.hibernate.chapter5.manyToManyMapping.Chpt5Delegate" />
+	
 	</session-factory>
 </hibernate-configuration>
