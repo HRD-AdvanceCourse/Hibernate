@@ -1,4 +1,4 @@
-package com.hibernate.chapter3OneClassToTwoTable;
+package com.hibernate.chapter3.OneClassToTwoTable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

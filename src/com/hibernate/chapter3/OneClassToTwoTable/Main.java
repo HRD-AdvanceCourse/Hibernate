@@ -1,4 +1,4 @@
-package com.hibernate.chapter3OneClassToTwoTable;
+package com.hibernate.chapter3.OneClassToTwoTable;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
