@@ -6,7 +6,7 @@
 		<!-- Database connection setting -->
 
 		<property name="connection.driver_class">org.postgresql.Driver</property>
-		<property name="connection.url">jdbc:postgresql://localhost:5432/AnimalBookDB</property>
+		<property name="connection.url">jdbc:postgresql://localhost:5432/hibernate</property>
 		<property name="connection.username">postgres</property>
 		<property name="connection.password">1234</property>
 
@@ -51,7 +51,15 @@
 		<!-- One to One -->
 		<mapping class="com.hibernate.oneToOneMapping.Student" />
 		<mapping class="com.hibernate.oneToOneMapping.StudentDetail" />
-		
-			<mapping class="com.hibernate.main2.Employee" />
+
+		<!-- Chapter 1 n 2 -->
+		<mapping class="com.hibernate.chapter1and2.Employee" />
+
+		<!-- Chatper 3 one class to two table -->
+
+		<mapping class="com.hibernate.chapter3OneClassToTwoTable.Customer" />
+
+
+
 	</session-factory>
 </hibernate-configuration>

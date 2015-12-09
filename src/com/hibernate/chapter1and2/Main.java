@@ -1,4 +1,4 @@
-package com.hibernate.main2;
+package com.hibernate.chapter1and2;
 
 import java.sql.Date;
 import java.util.GregorianCalendar;
