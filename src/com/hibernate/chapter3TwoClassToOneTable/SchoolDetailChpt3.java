@@ -1,6 +1,10 @@
 package com.hibernate.chapter3TwoClassToOneTable;
 
-public class SchoolDetail {
+import javax.persistence.Embeddable;
+
+@Embeddable  //step 2 that all
+public class SchoolDetailChpt3 {
+	
 	private String schoolAddress;
 	private boolean isPublicSchool;
 	private int studentCount;

@@ -56,10 +56,11 @@
 		<mapping class="com.hibernate.chapter1and2.EmployeeChpt1" />
 
 		<!-- Chatper 3 one class to two table -->
-
 		<mapping class="com.hibernate.chapter3OneClassToTwoTable.CustomerChpt3" />
 
-
+	<!-- Chatper 3 two class to one table -->
+		<mapping class="com.hibernate.chapter3TwoClassToOneTable.SchoolChpt3" />
+	
 
 	</session-factory>
 </hibernate-configuration>
