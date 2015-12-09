@@ -35,29 +35,29 @@
 		<property name="hbm2ddl.auto">create</property>
 
 		<!-- Mention here all the model classes along with their package name -->
-		<mapping class="main.java.Student_Info" />
+		<mapping class="main.java.StudentInfoDemo" />
 
 		<!-- CRUD -->
-		<mapping class="com.hibernate.CRUD.Student" />
+		<mapping class="com.hibernate.CRUD.StudentCRUD" />
 
 		<!-- Many To Many -->
-		<mapping class="com.hibernate.manyToManyMapping.Student" />
-		<mapping class="com.hibernate.manyToManyMapping.StudentCertification" />
+		<mapping class="com.hibernate.manyToManyMapping.StudentManyToMany" />
+		<mapping class="com.hibernate.manyToManyMapping.StudentManyToManyCertification" />
 
 		<!-- Many To One -->
-		<mapping class="com.hibernate.manyToOneMapping.Student" />
-		<mapping class="com.hibernate.manyToOneMapping.StudentAddress" />
+		<mapping class="com.hibernate.manyToOneMapping.StudentManyToOne" />
+		<mapping class="com.hibernate.manyToOneMapping.StudentManyToOneAddress" />
 
 		<!-- One to One -->
-		<mapping class="com.hibernate.oneToOneMapping.Student" />
-		<mapping class="com.hibernate.oneToOneMapping.StudentDetail" />
+		<mapping class="com.hibernate.oneToOneMapping.StudentOneToOne" />
+		<mapping class="com.hibernate.oneToOneMapping.StudentOneToOneDetail" />
 
 		<!-- Chapter 1 n 2 -->
-		<mapping class="com.hibernate.chapter1and2.Employee" />
+		<mapping class="com.hibernate.chapter1and2.EmployeeChpt1" />
 
 		<!-- Chatper 3 one class to two table -->
 
-		<mapping class="com.hibernate.chapter3OneClassToTwoTable.Customer" />
+		<mapping class="com.hibernate.chapter3OneClassToTwoTable.CustomerChpt3" />
 
 
 

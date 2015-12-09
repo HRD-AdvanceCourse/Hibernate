@@ -8,9 +8,9 @@ import javax.persistence.SecondaryTable;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Customer")
-@SecondaryTable(name="CustomerDetail") //create another table with this class, so it will create Customer and CustomerDetail table
-public class Customer {
+@Table(name="Customer_chapter3")
+@SecondaryTable(name="CustomerDetail_chapter3") //create another table with this class, so it will create Customer and CustomerDetail table
+public class CustomerChpt3 {
 	
 	private int customerId;
 	private String customerName;

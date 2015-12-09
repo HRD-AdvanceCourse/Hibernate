@@ -7,7 +7,7 @@ import org.hibernate.cfg.Configuration;
 public class Main {
 
 	public static void main(String[] args) {
-		Customer cs = new Customer();
+		CustomerChpt3 cs = new CustomerChpt3();
 		
 		SessionFactory sf = new Configuration().configure().buildSessionFactory();
 		Session s = sf.openSession();

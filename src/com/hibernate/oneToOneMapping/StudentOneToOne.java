@@ -6,8 +6,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "STUDENT")
-public class Student {
+@Table(name = "Student_OneToOne")
+public class StudentOneToOne {
 	@Id
 	@GeneratedValue
 	private int student_id;

@@ -8,16 +8,16 @@ public class Main {
 
 	public static void main(String[] args) {
 		//Create studentAddress object
-		StudentAddress studentAddress=new StudentAddress();
+		StudentManyToOneAddress studentAddress=new StudentManyToOneAddress();
 		studentAddress.setAddress_detail("Phnom Penh");
 		
 		
 		//Create two student object and assign studentAddress for it
-		Student student1=new Student();
+		StudentManyToOne student1=new StudentManyToOne();
 		student1.setStudent_name("Kokpheng");
 		student1.setStudentAddress(studentAddress);
 	
-		Student student2=new Student();
+		StudentManyToOne student2=new StudentManyToOne();
 		student2.setStudent_name("Kokpheng2");
 		student2.setStudentAddress(studentAddress);
 		

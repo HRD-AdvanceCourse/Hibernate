@@ -7,7 +7,7 @@ import org.hibernate.cfg.Configuration;
 public class Main {
 
 	public static void main(String[] args) {
-		Student student = new Student();
+		StudentCRUD student = new StudentCRUD();
 		student.setStudent_name("Kokpheng");
 
 		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
@@ -22,7 +22,7 @@ public class Main {
 		// table (it use select statment)
 		// - Default arg is the name of the class which map to student table
 		// - second is primary key for identify the record
-		student = (Student) session.get(Student.class, 1);
+		student = (StudentCRUD) session.get(StudentCRUD.class, 1);
 
 		student.setStudent_name("New name");// change value
 
@@ -33,7 +33,7 @@ public class Main {
 		// table (it use select statment)
 		// - Default arg is the name of the class which map to student table
 		// - second is primary key for identify the record
-		student = (Student) session.get(Student.class, 1);
+		student = (StudentCRUD) session.get(StudentCRUD.class, 1);
 
 		session.delete(student); // past object to delete function
 

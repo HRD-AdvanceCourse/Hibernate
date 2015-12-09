@@ -11,8 +11,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "STUDENTADDRESS")
-public class StudentAddress {
+@Table(name = "Student_ManyToOne_Address")
+public class StudentManyToOneAddress {
 
 	@Id
 	@GeneratedValue
@@ -23,13 +23,13 @@ public class StudentAddress {
 	// Step 2: Add a collection of student class
 	// Here is one to Many
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "studentAddress")
-	private Set<Student> student = new HashSet<Student>(0);
+	private Set<StudentManyToOne> student = new HashSet<StudentManyToOne>(0);
 
-	public Set<Student> getStudent() {
+	public Set<StudentManyToOne> getStudent() {
 		return student;
 	}
 
-	public void setStudent(Set<Student> student) {
+	public void setStudent(Set<StudentManyToOne> student) {
 		this.student = student;
 	}
 

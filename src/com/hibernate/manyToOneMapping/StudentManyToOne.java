@@ -8,8 +8,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "STUDENT")
-public class Student {
+@Table(name = "Student_ManyToOne")
+public class StudentManyToOne {
 
 	@Id
 	@GeneratedValue
@@ -20,13 +20,13 @@ public class Student {
 	// Step 1 : Just mention child object in parent class with getter setter 
 	// Here is Many To One
 	@ManyToOne(cascade = CascadeType.ALL)
-	private StudentAddress studentAddress;
+	private StudentManyToOneAddress studentAddress;
 
-	public StudentAddress getStudentAddress() {
+	public StudentManyToOneAddress getStudentAddress() {
 		return studentAddress;
 	}
 
-	public void setStudentAddress(StudentAddress studentAddress) {
+	public void setStudentAddress(StudentManyToOneAddress studentAddress) {
 		this.studentAddress = studentAddress;
 	}
 

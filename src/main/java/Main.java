@@ -9,7 +9,7 @@ import org.hibernate.cfg.Configuration;
 public class Main {
 
 	public static void main(String[] args) {
-		Student_Info student = new Student_Info();
+		StudentInfoDemo student = new StudentInfoDemo();
 		
 		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 		Session session = sessionFactory.openSession();

@@ -16,8 +16,8 @@ import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
 @Entity
-@Table(name="EmployeeInfo")
-public class Employee {
+@Table(name="EmployeeInfo_Chapter1")
+public class EmployeeChpt1 {
 	
 	@Id @Column(name ="EmployeeID") 	
 	//Create a table for storing pkvalue by mapping empid column

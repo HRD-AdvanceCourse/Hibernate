@@ -12,8 +12,8 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
 @Entity
-@Table(name = "STUDENTDETAIL") // rename table
-public class StudentDetail {
+@Table(name = "Student_OneToOne_Detail") // rename table
+public class StudentOneToOneDetail {
 
 	/* Step 2: in this session is tell hibernate that do not generate id for foreign table */
 	@Id @GeneratedValue(generator = "newGenerator") // name of the primary key generator
@@ -29,13 +29,13 @@ public class StudentDetail {
 	// Step 1: add these two annotation above Parent table object and getter setter
 	@OneToOne(cascade = CascadeType.ALL) // telling this class is has a relationship with below class
 	@JoinColumn(name = "student_id") // specific column relationship
-	private Student student;
+	private StudentOneToOne student;
 
-	public Student getStudent() {
+	public StudentOneToOne getStudent() {
 		return student;
 	}
 
-	public void setStudent(Student student) {
+	public void setStudent(StudentOneToOne student) {
 		this.student = student;
 	}
 
