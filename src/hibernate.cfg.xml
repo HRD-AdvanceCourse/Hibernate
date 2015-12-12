@@ -22,80 +22,88 @@
 		<!-- Echo all excute SQL to stdout -->
 		<property name="show_sql">true</property>
 
-	<!-- Drop the existing table and create new one(this use for creation only 
-		do not use for production, delete it for production) - value : it can hold 
-		the value create, update, create-drop, validate -->
+		<!-- Drop the existing table and create new one(this use for creation only 
+			do not use for production, delete it for production) - value : it can hold 
+			the value create, update, create-drop, validate -->
 
-	<!-- -create: it will drop existing schema and re-create new one schema 
-		base on model class but you will lose all data -->
-	<!-- -create-drop: everything will keep remain the same as create, the difference 
-		is if you close sessionFactory object hibernate will drop off schema and 
-		all data -->
-	<!-- -update : everytime you run your app hibernate will just update schema -->
-	<!-- -validate: every time you run your app it will just validate your existing 
-		schema with the one have annotation it not update or make any changes to 
-		database -->
+		<!-- -create: it will drop existing schema and re-create new one schema 
+			base on model class but you will lose all data -->
+		<!-- -create-drop: everything will keep remain the same as create, the 
+			difference is if you close sessionFactory object hibernate will drop off 
+			schema and all data -->
+		<!-- -update : everytime you run your app hibernate will just update schema -->
+		<!-- -validate: every time you run your app it will just validate your 
+			existing schema with the one have annotation it not update or make any changes 
+			to database -->
 		<property name="hbm2ddl.auto">create</property>
 
 		<!-- Mention here all the model classes along with their package name -->
-		<mapping class="main.java.StudentInfoDemo" />
+		<mapping class="n01.main.java.StudentInfoDemo" />
 
 		<!-- CRUD -->
-		<mapping class="com.hibernate.CRUD.StudentCRUD" />
-
-		<!-- Many To Many -->
-		<mapping class="com.hibernate.manyToManyMapping.StudentManyToMany" />
-		<mapping
-			class="com.hibernate.manyToManyMapping.StudentManyToManyCertification" />
-
-		<!-- Many To One -->
-		<mapping class="com.hibernate.manyToOneMapping.StudentManyToOne" />
-		<mapping class="com.hibernate.manyToOneMapping.StudentManyToOneAddress" />
+		<mapping class="n02.com.hibernate.CRUD.StudentCRUD" />
 
 		<!-- One to One -->
-		<mapping class="com.hibernate.oneToOneMapping.StudentOneToOne" />
-		<mapping class="com.hibernate.oneToOneMapping.StudentOneToOneDetail" />
+		<mapping class="n03.com.hibernate.oneToOneMapping.StudentOneToOne" />
+		<mapping class="n03.com.hibernate.oneToOneMapping.StudentOneToOneDetail" />
+
+		<!-- Many To One -->
+		<mapping class="n04.com.hibernate.manyToOneMapping.StudentManyToOne" />
+		<mapping class="n04.com.hibernate.manyToOneMapping.StudentManyToOneAddress" />
+
+		<!-- Many To Many -->
+		<mapping class="n05.com.hibernate.manyToManyMapping.StudentManyToMany" />
+		<mapping
+			class="n5.com.hibernate.manyToManyMapping.StudentManyToManyCertification" />
+
 
 		<!-- Chapter 1 n 2 -->
-		<mapping class="com.hibernate.chapter1and2.EmployeeChpt1" />
-
-		<!-- Chatper 3 one class to two table -->
-		<mapping class="com.hibernate.chapter3.OneClassToTwoTable.CustomerChpt3" />
-
-		<!-- Chatper 3 two class to one table -->
-		<mapping class="com.hibernate.chapter3.TwoClassToOneTable.SchoolChpt3" />
+		<mapping class="n06.com.hibernate.chapter1and2.EmployeeChpt1" />
 
 		<!-- Chatper 3 compound key -->
-		<mapping class="com.hibernate.chapter3.compoundPrimaryKey.AccountsChpt3" />
+		<mapping class="n07.com.hibernate.chapter3.compoundPrimaryKey.AccountsChpt3" />
 
+		<!-- Chatper 3 one class to two table -->
+		<mapping class="n08.com.hibernate.chapter3.OneClassToTwoTable.CustomerChpt3" />
+
+		<!-- Chatper 3 two class to one table -->
+		<mapping class="n09.com.hibernate.chapter3.TwoClassToOneTable.SchoolChpt3" />
 
 		<!-- Best Strategy is Joined because it doesn't repeat data -->
-		<!-- Chatper 4 Inheritance SingelTable-->
-		<mapping class="com.hibernate.chapter4.InheritanceMapping.SingelTable.ProjectChpt4" />
-		<mapping class="com.hibernate.chapter4.InheritanceMapping.SingelTable.ModuleChpt4" />
-		<mapping class="com.hibernate.chapter4.InheritanceMapping.SingelTable.TaskChpt4" />
+		<!-- Chatper 4 Inheritance SingelTable -->
+		<mapping
+			class="n10.com.hibernate.chapter4.InheritanceMapping.SingelTable.ProjectChpt4" />
+		<mapping
+			class="n10.com.hibernate.chapter4.InheritanceMapping.SingelTable.ModuleChpt4" />
+		<mapping
+			class="n10.com.hibernate.chapter4.InheritanceMapping.SingelTable.TaskChpt4" />
 
 		<!-- Chatper 4 Inheritance Joined -->
-		<mapping class="com.hibernate.chapter4.InheritanceMapping.Joined.ProjectChpt4" />
-		<mapping class="com.hibernate.chapter4.InheritanceMapping.Joined.ModuleChpt4" />
+		<mapping
+			class="n11.com.hibernate.chapter4.InheritanceMapping.Joined.ProjectChpt4" />
+		<mapping
+			class="n11.com.hibernate.chapter4.InheritanceMapping.Joined.ModuleChpt4" />
 		<mapping class="com.hibernate.chapter4.InheritanceMapping.Joined.TaskChpt4" />
 
-		<!-- Chatper 4 Inheritance Joined -->
-		<mapping class="com.hibernate.chapter4.InheritanceMapping.TablePerClass.ProjectChpt4TPC" />
-		<mapping class="com.hibernate.chapter4.InheritanceMapping.TablePerClass.ModuleChpt4TPC" />
-		<mapping class="com.hibernate.chapter4.InheritanceMapping.TablePerClass.TaskChpt4TPC" />
-		
+		<!-- Chatper 4 Inheritance Table Per Class -->
+		<mapping
+			class="n12.com.hibernate.chapter4.InheritanceMapping.TablePerClass.ProjectChpt4TPC" />
+		<mapping
+			class="n12.com.hibernate.chapter4.InheritanceMapping.TablePerClass.ModuleChpt4TPC" />
+		<mapping
+			class="n12.com.hibernate.chapter4.InheritanceMapping.TablePerClass.TaskChpt4TPC" />
+
 		<!-- Chatper 5 one to one -->
-		<mapping class="com.hibernate.chapter5.oneToOneMapping.PersonChpt5" />
-		<mapping class="com.hibernate.chapter5.oneToOneMapping.PersonDetailChpt5" />
-		
+		<mapping class="n13.com.hibernate.chapter5.oneToOneMapping.PersonChpt5" />
+		<mapping class="n13.com.hibernate.chapter5.oneToOneMapping.PersonDetailChpt5" />
+
 		<!-- Chatper 5 one to many -->
-		<mapping class="com.hibernate.chapter5.oneToManyMapping.CollegeChpt5" />
-		<mapping class="com.hibernate.chapter5.oneToManyMapping.StudentChpt5" />
-		
+		<mapping class="n14.com.hibernate.chapter5.oneToManyMapping.CollegeChpt5" />
+		<mapping class="n14.com.hibernate.chapter5.oneToManyMapping.StudentChpt5" />
+
 		<!-- Chatper 5 Many to many -->
-		<mapping class="com.hibernate.chapter5.manyToManyMapping.Chpt5Event" />
-		<mapping class="com.hibernate.chapter5.manyToManyMapping.Chpt5Delegate" />
-	
+		<mapping class="n15.com.hibernate.chapter5.manyToManyMapping.Chpt5Event" />
+		<mapping class="n15.com.hibernate.chapter5.manyToManyMapping.Chpt5Delegate" />
+
 	</session-factory>
 </hibernate-configuration>
