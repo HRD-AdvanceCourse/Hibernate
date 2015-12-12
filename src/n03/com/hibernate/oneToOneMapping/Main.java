@@ -8,10 +8,10 @@ public class Main {
 
 	// Step 3
 	public static void main(String[] args) {
-		StudentOneToOne student = new StudentOneToOne();
+		N03_Student student = new N03_Student();
 		student.setStudent_name("kokpheng");
 
-		StudentOneToOneDetail studentDetail = new StudentOneToOneDetail();
+		N03_StudentDetail studentDetail = new N03_StudentDetail();
 		studentDetail.setStudent_mobile_number("010839775");
 		
 		//this is an important step

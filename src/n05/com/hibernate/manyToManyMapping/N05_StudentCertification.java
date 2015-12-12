@@ -6,8 +6,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Student_ManyToMany_Certification")
-public class StudentManyToManyCertification {
+@Table(name = "N05_Student_Certification")
+public class N05_StudentCertification {
 
 	@Id
 	@GeneratedValue

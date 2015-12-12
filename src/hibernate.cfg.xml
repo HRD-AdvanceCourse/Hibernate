@@ -38,23 +38,23 @@
 		<property name="hbm2ddl.auto">create</property>
 
 		<!-- Mention here all the model classes along with their package name -->
-		<mapping class="n01.main.java.StudentInfoDemo" />
+		<mapping class="n01.main.java.N01_StudentInfoDemo" />
 
 		<!-- CRUD -->
-		<mapping class="n02.com.hibernate.CRUD.StudentCRUD" />
+		<mapping class="n02.com.hibernate.CRUD.N02_Student" />
 
 		<!-- One to One -->
-		<mapping class="n03.com.hibernate.oneToOneMapping.StudentOneToOne" />
-		<mapping class="n03.com.hibernate.oneToOneMapping.StudentOneToOneDetail" />
+		<mapping class="n03.com.hibernate.oneToOneMapping.N03_Student" />
+		<mapping class="n03.com.hibernate.oneToOneMapping.N03_Student" />
 
 		<!-- Many To One -->
-		<mapping class="n04.com.hibernate.manyToOneMapping.StudentManyToOne" />
-		<mapping class="n04.com.hibernate.manyToOneMapping.StudentManyToOneAddress" />
+		<mapping class="n04.com.hibernate.manyToOneMapping.N04_Student" />
+		<mapping class="n04.com.hibernate.manyToOneMapping.N04_StudentAddress" />
 
 		<!-- Many To Many -->
-		<mapping class="n05.com.hibernate.manyToManyMapping.StudentManyToMany" />
+		<mapping class="n05.com.hibernate.manyToManyMapping.N05_Student" />
 		<mapping
-			class="n5.com.hibernate.manyToManyMapping.StudentManyToManyCertification" />
+			class="n05.com.hibernate.manyToManyMapping.N05_StudentCertification" />
 
 
 		<!-- Chapter 1 n 2 -->

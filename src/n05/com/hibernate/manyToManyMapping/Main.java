@@ -7,17 +7,17 @@ import org.hibernate.cfg.Configuration;
 public class Main {
 
 	public static void main(String[] args) {
-		StudentManyToManyCertification studentCertification1 = new StudentManyToManyCertification();
+		N05_StudentCertification studentCertification1 = new N05_StudentCertification();
 		studentCertification1.setCertification_name("Java Certification");
 
-		StudentManyToManyCertification studentCertification2 = new StudentManyToManyCertification();
+		N05_StudentCertification studentCertification2 = new N05_StudentCertification();
 		studentCertification2.setCertification_name("Oracle DB Certification");
 
-		StudentManyToMany student1 = new StudentManyToMany();
+		N05_Student student1 = new N05_Student();
 		student1.setStudent_name("Kokpheng");
 		(student1.getStudentCertification()).add(studentCertification1);
 
-		StudentManyToMany student2 = new StudentManyToMany();
+		N05_Student student2 = new N05_Student();
 		student2.setStudent_name("Kokpheng");
 		(student2.getStudentCertification()).add(studentCertification2);
 

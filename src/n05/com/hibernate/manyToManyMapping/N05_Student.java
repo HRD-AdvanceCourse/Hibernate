@@ -11,8 +11,8 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Student_ManyToMany")
-public class StudentManyToMany {
+@Table(name = "N05_Student")
+public class N05_Student {
 
 	@Id
 	@GeneratedValue
@@ -22,13 +22,13 @@ public class StudentManyToMany {
 
 	// Step 1: Add a collection of Set of studentCertification class
 	@ManyToMany(cascade=CascadeType.ALL)
-	private Set<StudentManyToManyCertification> studentCertification=new HashSet<StudentManyToManyCertification>();
+	private Set<N05_StudentCertification> studentCertification=new HashSet<N05_StudentCertification>();
 	
-	public Set<StudentManyToManyCertification> getStudentCertification() {
+	public Set<N05_StudentCertification> getStudentCertification() {
 		return studentCertification;
 	}
 
-	public void setStudentCertification(Set<StudentManyToManyCertification> studentCertification) {
+	public void setStudentCertification(Set<N05_StudentCertification> studentCertification) {
 		this.studentCertification = studentCertification;
 	}
 

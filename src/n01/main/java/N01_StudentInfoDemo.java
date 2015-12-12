@@ -12,8 +12,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name = "Student_Info_Demo") // rename table
-public class StudentInfoDemo {
+@Table(name = "N01_Student_Info_Demo") // rename table
+public class N01_StudentInfoDemo {
 	@Id 
 	
 	/* default hibernate will choose GenerationType depend on db
