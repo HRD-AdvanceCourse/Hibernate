@@ -54,7 +54,7 @@ public class N15_Delegate {
 	 */
 
 	@ManyToMany
-	@JoinTable(name = "JOIN_DELEGATE_EVENT", joinColumns = { @JoinColumn(name = "delegateId") }, inverseJoinColumns = { @JoinColumn(name = "eventId") })
+	@JoinTable(name = "N15_JOIN_DELEGATE_EVENT", joinColumns = { @JoinColumn(name = "delegateId") }, inverseJoinColumns = { @JoinColumn(name = "eventId") })
 	public List<N15_Event> getEvents() {
 		return events;
 	}

@@ -39,7 +39,7 @@ public class N08_Customer {
 	}
 
 	//Must tell above getter method
-	@Column(table="CustomerDetail_chapter3")
+	@Column(table="N08_Customer_Detail")
 	public String getCustomerAddress() {
 		return customerAddress;
 	}
@@ -48,7 +48,7 @@ public class N08_Customer {
 		this.customerAddress = customerAddress;
 	}
 
-	@Column(table="CustomerDetail_chapter3")
+	@Column(table="N08_Customer_Detail")
 	public int getCreditScroe() {
 		return creditScroe;
 	}
@@ -57,7 +57,7 @@ public class N08_Customer {
 		this.creditScroe = creditScroe;
 	}
 
-	@Column(table="CustomerDetail_chapter3")
+	@Column(table="N08_Customer_Detail")
 	public int getRewardPoints() {
 		return rewardPoints;
 	}

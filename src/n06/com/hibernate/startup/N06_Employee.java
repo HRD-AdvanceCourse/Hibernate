@@ -26,7 +26,7 @@ public class N06_Employee {
 	//-pkColumnName=column name in tablename
 	//-pkColumnValue=store value of empid column
 	//-allocationSize=next size
-	@TableGenerator(name="empid", table="emppktb", pkColumnName="empkey", pkColumnValue="empvalue", allocationSize=1)
+	@TableGenerator(name="empid", table="N06_emppktb", pkColumnName="empkey", pkColumnValue="empvalue", allocationSize=1)
 	@GeneratedValue(strategy=GenerationType.TABLE, generator="empid")
 	private int empId;
 	private String empName;
