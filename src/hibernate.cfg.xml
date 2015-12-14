@@ -6,7 +6,7 @@
 		<!-- Database connection setting -->
 
 		<property name="connection.driver_class">org.postgresql.Driver</property>
-		<property name="connection.url">jdbc:postgresql://localhost:5432/Hibernate</property>
+		<property name="connection.url">jdbc:postgresql://localhost:5432/hibernate</property>
 		<property name="connection.username">postgres</property>
 		<property name="connection.password">1234</property>
 
@@ -104,6 +104,9 @@
 		<!-- Many to many -->
 		<mapping class="n15.com.hibernate.manyToManyMapping.N15_Event" />
 		<mapping class="n15.com.hibernate.manyToManyMapping.N15_Delegate" />
+		
+		<!-- Criteria -->
+		<mapping class="n16.com.hibernate.criteria.N16_Worker" />
 
 	</session-factory>
 </hibernate-configuration>
